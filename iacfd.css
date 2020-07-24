@@ -1,0 +1,314 @@
+
+        body {
+            margin: 0px;
+            font-size: 24px;
+            background-color: azure;
+            line-height: 1.6;
+            text-align: justify;
+
+
+        }
+
+        html {
+            font-size: 100%;
+        }
+
+        @media (min-width: 640px) {
+            body {
+                font-size: 1rem;
+            }
+        }
+
+        @media (min-width:960px) {
+            body {
+                font-size: 1.2rem;
+            }
+        }
+
+        @media (min-width:1100px) {
+            body {
+                font-size: 1.5rem;
+            }
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: auto;
+            box-shadow: 1px 1px 20px 1px #7e0b0b;
+            z-index: 1;
+
+
+            /* animation: 1s ease-out 0s 1 slideInFromtop; */
+
+        }
+
+        @media screen and (max-width: 900px) {
+            .topnav a:not(:first-child) {
+                display: none;
+            }
+
+            .topnav a.icon {
+                float: right;
+                display: block;
+            }
+        }
+
+        @media screen and (max-width: 900px) {
+            .topnav.responsive {
+                position: relative;
+                height: auto;
+            }
+
+            .topnav.responsive .icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+
+            .topnav.responsive a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+        }
+
+        .topnav a {
+            float: left;
+            display: block;
+            color: azure;
+            text-align: center;
+            padding: 18px 20px;
+            margin: 0px 5px;
+            text-decoration: none;
+            font-size: 30px;
+            height: auto;
+            width: auto;
+
+
+        }
+
+        .topnav a:hover {
+            background-color: #7e0b0b;
+            color: White;
+
+        }
+
+        .topnav a:after {
+            display: block;
+            content: '';
+            border-bottom: solid 3px white;
+            transform: scaleX(0);
+            transition: transform .5s ease-in-out;
+        }
+
+        .topnav a:hover:after {
+            transform: scaleX(1);
+        }
+
+        /* .navbar a:useclassname:after{ transform-origin:100% 50%; }
+.navbar a:useclassname:after{  transform-origin:  0% 50%; } */
+
+        .topnav .icon {
+            display: none;
+        }
+
+        section {
+
+            min-height: 100vh;
+            max-height: auto;
+            padding: 20px;
+            margin:0px;
+
+        }
+
+        section:nth-child(even) {
+            background-color: azure;
+        }
+
+        section:nth-child(odd) {
+            background-color: azure;
+        }
+
+        .headings {
+            font-size: 46px;
+            color: #7e0b0b;
+            line-height: 52px;
+            padding-bottom: 10px;
+            font-weight: 700;
+            text-align: center;
+            text-transform: uppercase;
+            position: relative;
+            margin-bottom: 10px;
+            margin-top: 150px;
+            border-bottom: 2px solid #7e0b0b;
+
+
+        }
+
+        #title {
+            color: #7e0b0b;
+            font-size: 60px;
+            margin-bottom: 0px;
+            margin-top: 0px;
+            position: relative;
+            animation: 1s ease-out 0s 1 slideInFrombottom;
+            /* border: 2px solid #7e0b0b; */
+        }
+
+        .mytab {
+            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: auto;
+            margin-top: 20px;
+        }
+
+        .mytab td,
+        .mytab th {
+            border: 2px solid #ddd;
+            padding: 14px;
+        }
+
+        .mytab tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .mytab tr:hover {
+            background-color: #7e0b0b;
+            color: white
+        }
+
+        .mytab th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #7e0b0b;
+            color: white;
+        }
+
+        ul {
+            list-style: circle;
+        }
+
+        ul li::before {
+            content: "\2022";
+            color: #7e0b0b;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        p {
+            margin: 1em 0;
+
+        }
+
+        h4 {
+            font-size: 25px;
+        }
+
+        .brown_color {
+            color: #7e0b0b;
+            padding-bottom: 0px;
+            margin-bottom: 0px;
+        }
+
+        #date {
+            background-color: #7e0b0b;
+            color: white;
+            padding: 10px;
+            box-shadow: 1px 1px 10px 1px #7e0b0b;
+            text-align: center;
+            font-size: 30px;
+            animation: 3s ease-out 0s 1 slideInFromtop;
+            width: 250px;
+        }
+
+        .removegap {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        @keyframes slideInFromtop {
+            0% {
+                transform: translateY(-100%);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInFrombottom {
+            0% {
+                transform: translateY(30%);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInFromright {
+            0% {
+                transform: translateX(30%);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        #myBtn {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Fixed/sticky position */
+            bottom: 10px;
+            /* Place the button at the bottom of the page */
+            right: 10px;
+            /* Place the button 30px from the right */
+            z-index: 99;
+            /* Make sure it does not overlap */
+            border: none;
+            /* Remove borders */
+            outline: none;
+            /* Remove outline */
+            background-color: #000;
+            /* Set a background color */
+            color: white;
+            /* Text color */
+            cursor: pointer;
+            /* Add a mouse pointer on hover */
+            padding: 15px;
+            /* Some padding */
+            border-radius: 50px;
+            /* Rounded corners */
+            font-size: 18px;
+            /* Increase font size */
+            box-shadow: 1px 1px 10px 1px #000;
+            background-image: url(top-arrow.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 60px;
+            width: 60px;
+
+        }
+
+        #myBtn:hover {
+            background-color: #7e0b0b;
+            box-shadow: 1px 1px 20px 1px #7e0b0b;
+
+
+        }
+
