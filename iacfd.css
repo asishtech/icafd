@@ -164,34 +164,47 @@
             font-size: 60px;
             margin-bottom: 0px;
             margin-top: 0px;
+            padding-bottom: 0px;
+            padding-top: 0px;
             position: relative;
             animation: 1s ease-out 0s 1 slideInFrombottom;
             /* border: 2px solid #7e0b0b; */
         }
 
-        .mytab {
+        .mytab,
+        .mytab1 {
             font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
             border-collapse: collapse;
             width: auto;
-            margin-top: 20px;
+            margin-top: 36px;
         }
 
         .mytab td,
-        .mytab th {
+        .mytab1 td,
+        .mytab th,
+        .mytab1 th {
             border: 2px solid #ddd;
-            padding: 14px;
+            padding: 10px 24px;
         }
 
-        .mytab tr:nth-child(even) {
+        .mytab tr:nth-child(even),
+        .mytab1 tr:nth-child(even) {
             background-color: #f2f2f2;
         }
+
+
 
         .mytab tr:hover {
             background-color: #7e0b0b;
             color: white
         }
 
-        .mytab th {
+        .mytab1 td:hover {
+            background-color: #7e0b0b;
+            color: white;
+        }
+        .mytab th,
+        .mytab1 th {
             padding-top: 12px;
             padding-bottom: 12px;
             text-align: left;
@@ -236,6 +249,20 @@
             font-size: 30px;
             animation: 3s ease-out 0s 1 slideInFromtop;
             width: 250px;
+            margin:10px 0px 0px 0px;
+        }
+
+        #timer
+        {
+            border:2px solid  #7e0b0b;
+            margin:0px;
+            padding:10px;
+            color:#000;
+            height:auto;
+            width: 244px;
+            text-align:center;
+            font-size: 30px;
+            font-weight: bold;
         }
 
         .removegap {
@@ -316,3 +343,19 @@
 
         }
 
+        footer{
+            height:86px;
+            width:100%;
+            background-color: #000;
+            color:azure;
+            text-align: center;
+        }
+
+
+
+        #logo
+        {
+            height:150px;
+            width:450px;
+            margin:auto;
+        }
