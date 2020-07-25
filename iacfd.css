@@ -359,3 +359,8 @@
             width:450px;
             margin:auto;
         }
+        iframe
+        {
+            width: 100%;
+            border: 2px solid #ccc;
+        }
