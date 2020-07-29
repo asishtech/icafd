@@ -143,6 +143,7 @@
             background-image: url(images/homebackground.png);
             background-repeat: no-repeat;
             background-size: cover;
+	    background-position: center;
             margin:0px;
             padding:0px;
             padding-top:100px;
