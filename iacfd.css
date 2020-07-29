@@ -8,7 +8,7 @@
       body {
             margin: 0px;
             padding:0px;
-            font-size: 24px;
+            font-size: 16px;
             background-color: azure;
             line-height: 1.6;
             text-align: justify;
@@ -29,13 +29,13 @@
 
         @media (min-width:960px) {
             body {
-                font-size: 1.2rem;
+                font-size: 1.1rem;
             }
         }
 
         @media (min-width:1100px) {
             body {
-                font-size: 1.5rem;
+                font-size: 1.2rem;
             }
         }
 
@@ -95,10 +95,10 @@
             display: block;
             color: azure;
             text-align: center;
-            padding: 18px 20px;
+            padding: 16px 18px;
             margin: 0px 5px;
             text-decoration: none;
-            font-size: 30px;
+            font-size: 20px;
             height: auto;
             width: auto;
 
@@ -132,9 +132,9 @@
 
         section {
 
-            min-height: 100vh;
+            /* min-height: 100vh; */
             max-height: auto;
-            padding: 20px;
+            padding: 10px;
             margin:0px;
             
         }
@@ -146,6 +146,7 @@
             margin:0px;
             padding:0px;
             padding-top:100px;
+            /* max-height:auto !important; */
         }
 
         section:nth-child(even) {
@@ -157,11 +158,11 @@
         }
 
         .headings {
-            font-size: 46px;
+            font-size: 36px;
             color: #7e0b0b;
             line-height: 52px;
             padding-bottom: 10px;
-            font-weight: 700;
+            font-weight: 600;
             text-align: center;
             text-transform: uppercase;
             position: relative;
@@ -174,7 +175,7 @@
 
         #title {
             color: #7e0b0b;
-            font-size: 60px;
+            font-size: 40px;
             margin-bottom: 0px;
             margin-top: 0px;
             padding-bottom: 0px;
@@ -236,7 +237,7 @@
 
         ul {
             list-style: square;
-           margin-left: 60px;
+           margin-left: 30px;
         }
 
         /* ul li::before {
@@ -248,19 +249,11 @@
             margin-left: -1em;
         } */
 
-        p {
-            margin: 1em 0;
-
-        }
-
-        h4 {
-            font-size: 25px;
-        }
-
         .brown_color {
             color: #7e0b0b;
-            padding-bottom: 0px;
-            margin-bottom: 0px;
+            padding: 0px;
+            margin: 0px;
+            font-size:22px;
         }
 
         #date {
@@ -269,9 +262,9 @@
             padding: 10px;
             box-shadow: 1px 1px 10px 1px #7e0b0b;
             text-align: center;
-            font-size: 30px;
+            font-size: 22px;
             animation: 3s ease-out 0s 1 slideInFromtop;
-            width: 250px;
+            width: 200px;
             margin:10px 0px 0px 0px;
         }
 
@@ -280,6 +273,7 @@
         .removegap {
             padding: 0px;
             margin: 0px;
+            font-size:16px;
         }
 
         @keyframes slideInFromtop {
@@ -367,8 +361,8 @@
 
         #logo
         {
-            height:150px;
-            width:450px;
+            height:100px;
+            width:300px;
             margin:auto;
         }
 
@@ -392,17 +386,16 @@
 
     .theme h4
     {
-        font-size:56px;
+        font-size:36px;
         margin:0px;
         padding:0px;
         text-transform: uppercase;
-       
-
+     
     }
 
     .theme p
     {
-        font-size:36px;
+        font-size:26px;
         margin:10px;
         padding:10px;
     }
@@ -418,13 +411,13 @@
 #org
 {
     text-align:right;
-    margin-top:0px;
+    margin-top:10px;
     
 }
 
 #assoc
 {
-    margin-top:100px;
+    margin-top:70px;
     text-align:left;
     
 }
@@ -435,9 +428,9 @@
     padding:30px;
     color:#000;
     height:25%;
-    width: 93%;
+    width: 100%;
     text-align:center;
-    font-size: 40px;
+    font-size: 36px;
     font-weight: bold;
 
     /* background-color: cornsilk; */
@@ -450,10 +443,10 @@
 
 .timerbox
 {
-  font-size: 65px;
-  height:140px;
+  font-size: 50px;
+  height:110px;
   display:inline-block;
-  width:140px;
+  width:110px;
   box-shadow: 1px 1px 15px 1px #7e0b0b;
   text-align:center;
   font-stretch:expanded;
@@ -466,7 +459,7 @@
 .small
 {
     display:block;
-    font-size: 20px;
+    font-size: 14px;
     margin-top: 0px;
     color:#ccc;
     font-family:'Times New Roman', Times, serif
@@ -487,38 +480,39 @@
     background-image: url(images/vitap.png);
     background-repeat: no-repeat;
     background-size: cover;
-    padding:20px;
-    font-weight: 500;
+    padding:10px;
+    font-weight: 450;
     text-align: justify;
+    line-height: 1.7;
     
    
 }
 
 #about h4{
     text-align: center;
-    font-size: 1.7em;
+    font-size: 1.2em;
 }
 
 #about p{
-    padding: .5% 10%;
-    font-size: 1.2em;
+    padding: 1% 5%;
+    font-size: 1.1em;
     margin:0;    
 }
 
 #objective h4{
     text-align: center;
-    font-size: 1.7em;
+    font-size: 1.1em;
 }
 
 #objective p{
     padding: .5% 10%;
-    font-size: 1.2em;
+    font-size: 1em;
     margin:0;    
 }
 
 #audience
 {
-    width:99%;
+    width:100%;
     height:25%;
    
     margin:0px;
@@ -530,7 +524,7 @@
 
 #audience h4
 {
-    font-size:56px;
+    font-size:36px;
     margin:0px;
     padding:0px;
     text-transform: uppercase;
@@ -540,7 +534,7 @@
 
 #audience p
 {
-    font-size:36px;
+    font-size:26px;
     margin:10px;
     padding:10px;
 }
@@ -548,8 +542,8 @@
 #speakers
 {
     margin:0px;
-    padding:10px;
-    background-color:#f38686;
+    padding:15px;
+    background-color:#f76b6b;
     text-align:center;
     color:#7e0b0b;
     overflow: hidden;
@@ -565,47 +559,50 @@
 }
 #speakers h4
 {
-    font-size:36px;
+    font-size:1.2em;
     margin:60px 0px 30px 0px;
     padding:0px;
     text-transform: uppercase;
+    text-decoration: underline;
 }
 
 #foreign_speaker, #indian_speaker, #committe_member
 {
-    margin:0% 18%;
-    clear:both; 
+    width:97%;
+    margin:auto;
+   
+    text-align:center;
+   
 }
 
-#indian_speaker h4
-{
-    clear:both;
-}
+
 
 div.gallery {
-    margin: 20px;
-    float: left;
-    width: 260px;
-    padding:30px;
-    height:330px;
+    margin: 2%;
+    /* float: left; */
+    width: 200px;
+    padding:10px;
+    height:270px;
+    display:inline-table;
     
   }
-  
+/*   
   div.gallery:hover {
     transform: scale(1.05);
-  }
+  } */
   
   div.gallery img {
     width: 100%;
-    height: 200px;
+    height: 170px;
      border-radius: 50%; 
-     border: 2px solid black;
+     border: 1px solid black;
+    
+     
   }
   
   div.desc {
    
-    
-    font-size: 18px;
+    font-size: 16px;
   }
   
 
@@ -614,23 +611,24 @@ div.gallery {
 
   .container {
     position: relative;
-    width: 300px;
-    height: 420px;
-    float:left;
-    margin:30px;
+    width: 180px;
+    height: 240px;
+    /* float:left; */
+    margin:2%;
     border: 1px solid #7e0b0b;
+    display: inline-table;
    
    
   }
 
   .container:hover {
-    box-shadow: 1px 1px 15px 1px #7e0b0b;
+    box-shadow: 1px 1px 10px 1px #7e0b0b;
   }
   
   .image {
-    display: block;
+    /* display: block; */
     width: 100%;
-    height: 100%;
+    height: 220px;
   }
   
   .overlay {
@@ -639,16 +637,16 @@ div.gallery {
     background-color:#7e0b0b;
     width: 100%;
     height: 28%;
-    opacity: 0.8;
+    opacity: 0.9;
   }
   
   
   
   .text {
     color: white;
-    font-size: 24px;
+    font-size: 14px;
     /* position: absolute; */
-    padding:5px;
+    padding:2px;
     text-align: center;
      
     }
@@ -657,17 +655,17 @@ div.gallery {
     {
         background-color: #f38686;
         color:black;
-        padding:20px;
-        clear:both;
+        padding:10px;
+        
         
     }
 
     #advisory_committe
     {
                
-        margin: 0% 15%;
-        padding: 2%;
-        font-size: 1.2em;
+        margin: 1% 5%;
+        padding: 1%;
+        font-size: 1em;
 
         
     }
@@ -675,7 +673,7 @@ div.gallery {
     #advisory_committe h3
     {
         text-align: center;
-        font-size:1.4em;
+        font-size:1.2em;
         margin: 20px 0;
         color:#7e0b0b;
         border-bottom: 3px solid #7e0b0b;
@@ -685,19 +683,19 @@ div.gallery {
 
     #author
     {
-         padding:1% 12%;
+         padding:1% 5%;
          clear: both;
-         font-size: 1.2em;
+         font-size: 1em;
         
     }
 
     #author h3{
         color: #7e0b0b;
-        font-size:40px;
+        font-size:1.2em;
     }
     #author h4{
         color: #7e0b0b;
-        font-size:30px;
+        font-size:1em;
         padding: 20px 0px;
     }
 
@@ -718,10 +716,10 @@ div.gallery {
     }
 
 
-    #registration, #dates, #award
+    #registration, #dates
     {
-         padding:1% 12%;
-         font-size: 1.2em;
+         padding:1% 5%;
+         font-size: 1.3em;
         
     }
 
@@ -734,6 +732,8 @@ div.gallery {
     {
         background-color: #eba2a2;
         color:black;
+        padding:1% 5%;
+         font-size: 1.1em;
 
     }
 
@@ -743,18 +743,77 @@ div.gallery {
     }
 
     #award h4{
-        font-size: 1.3em;
+        font-size: 1.1em;
         display: inline;
         border-bottom: 2px solid #7e0b0b;
     }
 
     #award p{
-        font-size: 1.1em;
+        font-size: 1em;
     }
 
     #award ul{
         list-style:square;
     }
     #award li{
-        font-size: 1.1em;
+        font-size: 1em;
     }
+
+    /* 
+Max width before this PARTICULAR table gets nasty
+This query will take effect for any screen smaller than 760px
+and also iPads specifically.
+*/
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr { border: 1px solid #ccc; }
+	
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+	
+	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
+    
+    
+    
+	/*
+	Label the data
+	/* 
+	td:nth-of-type(1):before { content: "First Name"; }
+	td:nth-of-type(2):before { content: "Last Name"; }
+	td:nth-of-type(3):before { content: "Job Title"; }
+	td:nth-of-type(4):before { content: "Favorite Color"; }
+	td:nth-of-type(5):before { content: "Wars of Trek?"; }
+	td:nth-of-type(6):before { content: "Secret Alias"; }
+	td:nth-of-type(7):before { content: "Date of Birth"; }
+	td:nth-of-type(8):before { content: "Dream Vacation City"; }
+	td:nth-of-type(9):before { content: "GPA"; }
+	td:nth-of-type(10):before { content: "Arbitrary Data"; } */
+}
