@@ -8,9 +8,9 @@
       body {
             margin: 0px;
             padding:0px;
-            font-size: 16px;
+            font-size: 15px;
             background-color: azure;
-            line-height: 1.6;
+            line-height: 1.5;
             text-align: justify;
             font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 
@@ -23,19 +23,19 @@
 
         @media (min-width: 640px) {
             body {
-                font-size: 1rem;
+                font-size: .8rem;
             }
         }
 
         @media (min-width:960px) {
             body {
-                font-size: 1.1rem;
+                font-size: .9rem;
             }
         }
 
         @media (min-width:1100px) {
             body {
-                font-size: 1.2rem;
+                font-size: 1rem;
             }
         }
 
@@ -159,7 +159,7 @@
         }
 
         .headings {
-            font-size: 36px;
+            font-size: 32px;
             color: #7e0b0b;
             line-height: 52px;
             padding-bottom: 10px;
@@ -271,7 +271,7 @@
             padding: 10px;
             box-shadow: 1px 1px 10px 1px #7e0b0b;
             text-align: center;
-            font-size: 22px;
+            font-size: 20px;
             animation: 3s ease-out 0s 1 slideInFromtop;
             width: 200px;
             margin:10px 0px 0px 0px;
@@ -379,7 +379,7 @@
 
     .theme h4
     {
-        font-size:36px;
+        font-size:32px;
         margin:0px;
         padding:0px;
         text-transform: uppercase;
@@ -388,7 +388,7 @@
 
     .theme p
     {
-        font-size:26px;
+        font-size:22px;
         margin:10px;
         padding:10px;
     }
@@ -423,7 +423,7 @@
     height:25%;
     width: 100%;
     text-align:center;
-    font-size: 36px;
+    font-size: 32px;
     font-weight: bold;
 
     /* background-color: cornsilk; */
@@ -436,15 +436,16 @@
 
 .timerbox
 {
-  font-size: 50px;
-  height:110px;
+  font-size: 36px;
+  height:80px;
   display:inline-block;
-  width:110px;
+  width:80px;
   box-shadow: 1px 1px 15px 1px #7e0b0b;
   text-align:center;
   font-stretch:expanded;
-  margin:20px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin:10px;
+  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+  font-family:Orbitron;
 
  
 }
@@ -452,7 +453,7 @@
 .small
 {
     display:block;
-    font-size: 14px;
+    font-size: 12px;
     margin-top: 0px;
     color:#ccc;
     font-family:'Times New Roman', Times, serif
@@ -483,12 +484,12 @@
 
 #about h4{
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
 #about p{
     padding: 1% 5%;
-    font-size: 1.1em;
+    font-size: 1.05em;
     margin:0;    
 }
 
@@ -517,7 +518,7 @@
 
 #audience h4
 {
-    font-size:36px;
+    font-size:32px;
     margin:0px;
     padding:0px;
     text-transform: uppercase;
@@ -552,7 +553,7 @@
 }
 #speakers h4
 {
-    font-size:1.2em;
+    font-size:1.1em;
     margin:60px 0px 30px 0px;
     padding:0px;
     text-transform: uppercase;
@@ -712,7 +713,7 @@ div.gallery {
     #registration, #dates
     {
          padding:1% 5%;
-         font-size: 1.3em;
+         font-size: 1.2em;
         
     }
 
@@ -726,7 +727,7 @@ div.gallery {
         background-color: #eba2a2;
         color:black;
         padding:1% 5%;
-         font-size: 1.1em;
+         font-size: 1.05em;
 
     }
 
@@ -763,7 +764,8 @@ only screen and (max-width: 760px),
 
 	/* Force table to not be like tables anymore */
 	table, thead, tbody, th, td, tr { 
-		display: block; 
+        display: block; 
+        text-align: center;
 	}
 	
 	/* Hide table headers (but not display: none;, for accessibility) */
@@ -818,10 +820,25 @@ footer{
     background-color: #000;
     color:white;
     text-align: center;
+    padding:7px;
 }
 
-.counter
+.counters
 {
     display: inline;
     font-family:Orbitron;
+}
+.counter
+{
+    display: inline-block;
+    padding:5px;
+    width:100px;
+    text-align: left;
+    margin:0px;
+    /* font-family:Orbitron; */
+}
+
+code
+{
+    font-size: 1.2em;
 }
