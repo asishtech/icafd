@@ -1,4 +1,50 @@
-   
+
+ const counters = document.querySelectorAll('.counter');
+ const speed = 200; // The lower the slower
+ 
+ counters.forEach(counter => {
+
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "https://api.countapi.xyz/update/icafd.co.in/asish123/?amount=1");
+    xhr.responseType = "json";
+    xhr.onload = function fun() {
+        // const tar = this.response.value;
+       
+       document.getElementById('cnt').setAttribute("data-target",this.response.value);
+     
+     }
+    xhr.send();
+
+    
+        const updateCount = () => {
+            const target = +counter.getAttribute('data-target');
+            const count = +counter.innerText;
+    
+            // Lower inc to slow and higher to slow
+            const inc = target / speed;
+    
+            // console.log(inc);
+            // console.log(count);
+    
+            // Check if target is reached
+            if (count < target) {
+                // Add inc to count and output in counter
+                counter.innerText = Math.ceil(count + inc);
+                // Call function every ms
+                setTimeout(updateCount, 100);
+            } else {
+                counter.innerText = target;
+            }
+        };
+    
+        updateCount();
+    });
+
+    
+
+
+
+
     function myFunction() {
         var x = document.getElementById("myTopnav");
         if (x.className === "topnav") {

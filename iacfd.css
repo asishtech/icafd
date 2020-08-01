@@ -143,10 +143,10 @@
             background-image: url(images/homebackground.png);
             background-repeat: no-repeat;
             background-size: cover;
-	    background-position: center;
             margin:0px;
             padding:0px;
             padding-top:100px;
+            background-position: center;
             /* max-height:auto !important; */
         }
 
@@ -253,9 +253,17 @@
         .brown_color {
             color: #7e0b0b;
             padding: 0px;
-            margin: 0px;
+            margin-top: 10px;
+            margin-bottom: 0px;
             font-size:22px;
         }
+
+        .removegap {
+            padding: 0px;
+            margin-top: 0px;
+            font-size:16px;
+        }
+
 
         #date {
             background-color: #7e0b0b;
@@ -271,12 +279,7 @@
 
      
 
-        .removegap {
-            padding: 0px;
-            margin: 0px;
-            font-size:16px;
-        }
-
+      
         @keyframes slideInFromtop {
             0% {
                 transform: translateY(-100%);
@@ -350,13 +353,7 @@
 
         }
 
-        footer{
-            height:auto;
-            width:100%;
-            background-color: #000;
-            color:azure;
-            text-align: center;
-        }
+     
 
 
 
@@ -367,11 +364,6 @@
             margin:auto;
         }
 
-        iframe{
-            width: 100%;
-            border: 2px solid #ccc;
-        }
-      
 
     .theme
     {
@@ -817,4 +809,19 @@ only screen and (max-width: 760px),
 	td:nth-of-type(8):before { content: "Dream Vacation City"; }
 	td:nth-of-type(9):before { content: "GPA"; }
 	td:nth-of-type(10):before { content: "Arbitrary Data"; } */
+}
+
+
+footer{
+    height:auto;
+    width:100%;
+    background-color: #000;
+    color:white;
+    text-align: center;
+}
+
+.counter
+{
+    display: inline;
+    font-family:Orbitron;
 }
