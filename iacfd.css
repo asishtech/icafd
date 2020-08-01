@@ -825,14 +825,17 @@ footer{
 
 .counters
 {
-    display: inline;
+    display: inline-block;
     font-family:Orbitron;
+    text-align: center;
+    width:50%;
+    margin:auto;
 }
 .counter
 {
     display: inline-block;
     padding:5px;
-    width:100px;
+    width:50px;
     text-align: left;
     margin:0px;
     /* font-family:Orbitron; */
