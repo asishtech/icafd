@@ -84,7 +84,7 @@
             
             
         } else {
-            mynav.style.backgroundColor = "transparent";
+            mynav.style.backgroundColor = "#c6d7e617";
             
             for (let i = 0; i < child.length; i++) {
                 child[i].style.color = '#7e0b0b';

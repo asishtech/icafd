@@ -48,8 +48,8 @@
 
         .topnav {
             overflow: hidden;
-            /* background-color: rgb(3, 3,3); */
-            background-color: transparent;
+            background-color: #c6d7e617;
+            /* background-color: transparent; */
             
             position: sticky;
             top: 0;
@@ -157,7 +157,7 @@
             background-size: cover; */
             margin:0px;
             padding:0px;
-            padding-top:100px;
+            /* padding-top:100px; */
             background-position: center;
             position: relative;
             /* background-color: #fff; */
