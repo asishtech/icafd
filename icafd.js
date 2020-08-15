@@ -57,6 +57,12 @@
     //Get the button:
     mybutton = document.getElementById("myBtn");
 
+    mynav = document.getElementById("myTopnav");
+
+    var child = mynav.children;
+    // child.style.color = '#ffffff';
+    // child.style.backgroundColor = '#004831';
+
     // When the user scrolls down 20px from the top of the document, show the button
     window.onscroll = function () { scrollFunction() };
 
@@ -65,6 +71,25 @@
             mybutton.style.display = "block";
         } else {
             mybutton.style.display = "none";
+        }
+
+        // for the cursor down menu appear code ////////////
+
+        if (document.body.scrollTop > 70 || document.documentElement.scrollTop > 70) {
+            mynav.style.backgroundColor = "black";
+            mynav.style.boxShadow= "1px 1px 20px 1px #7e0b0b";
+            for (let i = 0; i < child.length; i++) {
+                child[i].style.color = '#ffffff';
+              }
+            
+            
+        } else {
+            mynav.style.backgroundColor = "transparent";
+            
+            for (let i = 0; i < child.length; i++) {
+                child[i].style.color = '#7e0b0b';
+              }
+            mynav.style.boxShadow= "0px 0px 0px 0px #fff";
         }
     }
 
