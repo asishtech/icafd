@@ -897,3 +897,10 @@ code
   padding-top:10px;
 
 }
+
+
+#td 
+{
+    text-align: center; 
+    vertical-align: middle;
+}
